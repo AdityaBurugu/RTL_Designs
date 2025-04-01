@@ -1,0 +1,95 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/QuestaSimProjects
+T_opt
+!s110 1743489507
+V>UZJ3l08BhHO:;[:V?U^l0
+Z2 04 17 4 work Decoder_2x4_GF_tb fast 0
+=1-d0ad0864fd64-67eb89e2-391-79c0
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.1;73
+R1
+T_opt1
+!s110 1743489550
+Vc4mznXXiE<X^3iTl9F<dN3
+R2
+=1-d0ad0864fd64-67eb8a0e-28a-7318
+R3
+o-quiet -auto_acc_if_foreign -work work +acc
+R5
+n@_opt1
+R6
+T_opt2
+!s110 1743438744
+VC=_9dIJ0;fA:d7o?ORR5c3
+04 14 4 work Decoder_2x4_GF fast 0
+=1-d0ad0864fd64-67eac398-1c7-5744
+R3
+R4
+R5
+n@_opt2
+R6
+R1
+vDecoder_2x4_GF
+Z7 !s110 1743489479
+!i10b 1
+!s100 ;8XKEJkVgiQ[28glgU3X:1
+ITZT[FdA1;8>dZ35zfnja[3
+Z8 dD:/RTLProjects/Decoder_2to4
+w1743436990
+8D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v
+FD:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v
+!i122 6
+L0 1 38
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z11 !s108 1743489479.000000
+!s107 D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v|
+!i113 0
+Z12 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@decoder_2x4_@g@f
+vDecoder_2x4_GF_tb
+R7
+!i10b 1
+!s100 I``mRb^S0LJ[QOOZg@4Z20
+INQ;L0:b3jhhVNjjlHd<k?2
+R8
+w1743439067
+8D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v
+FD:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v
+!i122 7
+L0 1 63
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v|
+!i113 0
+R12
+R5
+n@decoder_2x4_@g@f_tb

@@ -1,0 +1,15 @@
+D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v {1 {vlog -work work -vopt -stats=none D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Decoder_2x4_GF
+
+Top level modules:
+	Decoder_2x4_GF
+
+} {} {}} D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v {1 {vlog -work work -vopt -stats=none D:/RTLProjects/Decoder_2to4/Decoder_2x4_GF_tb.v
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Decoder_2x4_GF_tb
+
+Top level modules:
+	Decoder_2x4_GF_tb
+
+} {} {}}
