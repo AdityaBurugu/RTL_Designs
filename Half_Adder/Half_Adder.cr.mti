@@ -1,0 +1,15 @@
+D:/RTLProjects/Half_Adder/Design_tb.v {1 {vlog -work work -vopt -stats=none D:/RTLProjects/Half_Adder/Design_tb.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module Half_Adder_tb
+
+Top level modules:
+	Half_Adder_tb
+
+} {} {}} D:/RTLProjects/Half_Adder/Design.v {1 {vlog -work work -vopt -stats=none D:/RTLProjects/Half_Adder/Design.v
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module Half_Adder
+
+Top level modules:
+	Half_Adder
+
+} {} {}}
