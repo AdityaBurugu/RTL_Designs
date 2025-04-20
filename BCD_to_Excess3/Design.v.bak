@@ -1,0 +1,50 @@
+module BCD_to_Excess3(w,
+			x,
+			y,
+			z,
+			A,		
+			B,
+			C,
+			D);
+////////////////////////////////////////////////
+//			PORT DECLARATIONS
+////////////////////////////////////////////////
+input A;
+input B;
+input C;
+input D;
+
+output w;
+output x;
+output y;
+output z;
+////////////////////////////////////////////////
+//			SIGNAL DECLARATIONS
+////////////////////////////////////////////////
+wire A;
+wire B;
+wire C;
+wire D;
+
+wire w;
+wire x;
+wire y;
+wire z;
+////////////////////////////////////////////////
+//			INTERNAL WIRE DECLARATIONS
+////////////////////////////////////////////////
+wire notB;
+wire notC;
+wire notD;
+////////////////////////////////////////////////
+//			COMBINATIONAL LOGIC
+////////////////////////////////////////////////
+not G1(notB, B);
+not G2(notC, C);
+not G3(notD, D);
+
+assign z = notD;
+assign y = (C & D) | (notC & notD);
+assign x = (notB & C) | (notB & D) | (B & notC & notD);
+assign w = A | (B & (C | D));
+endmodule
