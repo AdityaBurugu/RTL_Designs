@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Read 1: 00a1
+Read 2: 00b2
+Read 3: 00c3
+Read 4: 00d4
+Read 5: 00d5
+Read 6: 00e6
+Read 7: 00f7
+Read 8: 00a0
+Read 9: 00a0
+$stop called at time : 225 ns : File "/home/aditya/Vivado_ViitisProjects/Synchronous_FIFO/hw/hw.srcs/sources_1/new/TB.v" Line 82

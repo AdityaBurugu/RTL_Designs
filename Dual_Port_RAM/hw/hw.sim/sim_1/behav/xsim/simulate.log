@@ -1,0 +1,32 @@
+Time resolution is 1 ps
+Starting Dual-Port RAM Test...
+--- Applying Reset ---
+Time=0: reset=1, we_a=0, addr_a= 0, din_a=  0, dout_a=  x | we_b=0, addr_b= 0, din_b=  0, dout_b=  x
+Time=5000: reset=1, we_a=0, addr_a= 0, din_a=  0, dout_a=  0 | we_b=0, addr_b= 0, din_b=  0, dout_b=  0
+Time=15000: reset=0, we_a=0, addr_a= 0, din_a=  0, dout_a=  x | we_b=0, addr_b= 0, din_b=  0, dout_b=  x
+Reset released. All outputs should be 0.
+--- Writing to separate addresses ---
+Time=25000: reset=0, we_a=1, addr_a= 1, din_a=170, dout_a=  x | we_b=1, addr_b= 3, din_b=187, dout_b=  x
+Time=35000: reset=0, we_a=1, addr_a= 2, din_a=204, dout_a=170 | we_b=1, addr_b= 4, din_b=221, dout_b=187
+Time=45000: reset=0, we_a=0, addr_a= 2, din_a=204, dout_a=204 | we_b=0, addr_b= 4, din_b=221, dout_b=221
+Writes complete. Reading back data now.
+--- Reading from written addresses ---
+Time=55000: reset=0, we_a=0, addr_a= 1, din_a=204, dout_a=204 | we_b=0, addr_b= 3, din_b=221, dout_b=221
+Read A Addr 1: cc (Expected: AA)
+Read B Addr 3: dd (Expected: BB)
+Time=65000: reset=0, we_a=0, addr_a= 2, din_a=204, dout_a=170 | we_b=0, addr_b= 4, din_b=221, dout_b=187
+Read A Addr 2: aa (Expected: CC)
+Read B Addr 4: bb (Expected: DD)
+--- Testing simultaneous write to same address (race condition) ---
+Time=75000: reset=0, we_a=1, addr_a=15, din_a= 85, dout_a=204 | we_b=1, addr_b=15, din_b=238, dout_b=221
+Simultaneous write to address F complete. Value is non-deterministic.
+Time=85000: reset=0, we_a=0, addr_a=15, din_a= 85, dout_a=238 | we_b=0, addr_b=15, din_b=238, dout_b=238
+Read A from Addr F: ee (Expected: 55 or EE)
+Read B from Addr F: ee (Expected: 55 or EE)
+--- Reading from unwritten addresses ---
+Time=95000: reset=0, we_a=0, addr_a= 7, din_a= 85, dout_a=238 | we_b=0, addr_b= 8, din_b=238, dout_b=238
+Read A Addr 7: ee (Expected: 'x' or 0 after reset)
+Read B Addr 8: ee (Expected: 'x' or 0 after reset)
+Time=105000: reset=0, we_a=0, addr_a= 7, din_a= 85, dout_a=  x | we_b=0, addr_b= 8, din_b=238, dout_b=  x
+Test complete.
+$finish called at time : 115 ns : File "/home/aditya/Vivado_ViitisProjects/Dual_Port_RAM/hw/hw.srcs/sources_1/new/tb.v" Line 107
